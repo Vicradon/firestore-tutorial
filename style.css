@@ -16,7 +16,7 @@ h1{
   max-width: 960px;
   margin: 30px auto;
   padding:  20px 30px;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 120px 10px 10px;
   box-shadow: 1px 3px 5px rgba(0,0,0,0.1)
 }
 
@@ -62,6 +62,9 @@ li div{
   cursor:  pointer;
   color: red;
 }
+#add-cafe-form {
+  display: flex;
+}
 
 
 
@@ -102,4 +105,18 @@ button{
   font-weight: bold;
   font-family: ubuntu;
   letter-spacing: 1px;
+}
+@media(max-width:500px){
+  #add-cafe-form {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  button {
+    padding-bottom: 10vw;
+    width: 20vw;
+    height: 8vh;
+  }
+  form input {
+    margin-bottom: 2vh;
+  }
 }
