@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FireStore Tut</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-firestore.js"></script>
+</head>
+
+<body>
+  <h1>Cloud Cafe</h1>
+  <div class="content">
+    <form id="add-cafe-form">
+      <input type="text" name="name" placeholder="Cafe name">
+      <input type="text" name="city" placeholder="Cafe city">
+      <button>Add cafe<i class="fas fa-user"></i></button>
+    </form>
+    <ul id="cafe-list">
+
+    </ul>
+  </div>
+
+  <script>
+    //link to firestore in the cloud
+    var firebaseConfig = {
+      apiKey: "AIzaSyAfnPTDupZ54OqcByq2OWIDwAYDR8dd8uc",
+      authDomain: "ninja-nirestore-tut.firebaseapp.com",
+      databaseURL: "https://ninja-nirestore-tut.firebaseio.com",
+      projectId: "ninja-nirestore-tut",
+      storageBucket: "",
+      messagingSenderId: "796118652322",
+      appId: "1:796118652322:web:45d927d9d64f0952"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore()   //reference to the database in the cloud using a const
+    
+  </script>
+  <script src="./script.js"></script> 
+</body>
+
+</html>
